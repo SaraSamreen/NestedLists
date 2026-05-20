@@ -71,7 +71,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             
         } else {
             let cell = tableView.dequeueReusableCell(
-                withIdentifier: "CollectionCell", for: indexPath) as! CollectionViewContainerCell
+                withIdentifier: "CollectionCell", for: indexPath) as! CollectionViewCell
             cell.configure(with: category.items)
             return cell
         }
@@ -82,7 +82,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return indexPath.row == 0 ? 124 : 160
     }
     
-    func toggleSection(_ section: Int) {
+   func toggleSection(_ section: Int) {
         categories[section].isExpanded.toggle()
         
         let collectionIndexPath = IndexPath(row: 1, section: section)

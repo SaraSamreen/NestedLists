@@ -14,12 +14,8 @@ class ItemCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        // Cell clipping
         self.layer.cornerRadius = 12
-        self.clipsToBounds = true        // THIS clips the image to the rounded corners
-        
-        // Image fills the cell
+        self.clipsToBounds = true
         itemImageView.contentMode = .scaleAspectFill
-        itemImageView.clipsToBounds = true
     }
 }

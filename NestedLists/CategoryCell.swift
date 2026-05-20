@@ -22,9 +22,8 @@ class CategoryCell: UITableViewCell {
         categoryImageView.layer.cornerRadius = 12
         categoryImageView.clipsToBounds = true
         categoryImageView.contentMode = .scaleAspectFill
-        
-        categoryImageView.layer.borderWidth = 0
-           self.selectionStyle = .none
+        categoryImageView.layer.borderWidth = 1
+        self.selectionStyle = .none
 
     }
     
